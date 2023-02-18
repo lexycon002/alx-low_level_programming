@@ -8,15 +8,16 @@ int main(void)
 	char lc = 'a';
 	char uc = 'A';
 
-	while (lc <= 'a')
+	while (lc <= 'z')
 	{
 		putchar(lc);
 		lc++;
 	}
-	while (uc = 'A')
+	while (uc <= 'Z')
 	{
 		putchar(uc);
 		uc++;
 	}
+	putchar('\n');
 	return (0);
 }
