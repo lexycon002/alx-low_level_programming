@@ -2,14 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - This program assign a random numner to variable n
- * Return: 0 on Success
+ * main - A program that assign a random number to a variable
+ *
+ * Return: 0 on success
  */
-
 int main(void)
 {
 	int n;
-	char last[] = "last digit of";
+	char last[] = "Last digit of";
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
