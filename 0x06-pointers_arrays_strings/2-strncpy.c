@@ -11,21 +11,19 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int cpy_str = 0;
-	int cha_str = 0;
+	int str;
 
-	while (src[cpy_str++])
-	{
-		cha_str++;
-	}
+	str = 0;
 
-	for (cpy_str = 0; src[cpy_str] && cpy_str < n; cpy_str++)
+	while (str < n && src[str] != '\0')
 	{
-		dest[cpy_str] = src[cha_str];
+		dest[str] = src[str];
+		str++;
 	}
-	for (cpy_str = cha_str; cpy_str < n; cpy_str++)
+	while (str < n)
 	{
-		dest[cpy_str] = '\0';
+		dest[str] = '\0';
+		str++;
 	}
 	return (dest);
 }
