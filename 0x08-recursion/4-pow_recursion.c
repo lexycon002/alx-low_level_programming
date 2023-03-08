@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _pow_recursion -Function that returns the value of u raised to the power of f
+ * _pow_recursion -Function that returns the
+ * value of u raised to the power of f
  * @u: the value to raise
  * @f: raised to the power
  *
